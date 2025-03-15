@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArabiaTech - تكنولوجيا المستقبل</title>
+  <link rel="icon" type="image/png" href="./img/4.png">
+<script src="main.js"></script>
+  <link rel="stylesheet" href="main.css">
+
+    
+
+  
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+          <div class="logo">
+            <img src="logo.png" alt="">
+          </div>
+          
+          <nav>
+            <ul>
+              <li><a href="#">الصفحة الرئيسيه</a></li>
+              <li><a href="#courses">كورسات</a></li>
+              <li><a href="#why">لماذا أرابيا تك</a></li>
+              <li><a href="about.html">من نحن </a></li>
+            </ul>
+          </nav>
+          
+          <div class="buttons">
+            <a href="login.html" class="btn btn-outline">سجل الدخول إلى المنصة</a>
+            <a href="https://wa.me/+201080749803" class="btn btn-primary">تواصل معنا</a>
+            
+          </div>
+          
+          <!-- Mobile Menu Toggle -->
+          <div class="mobile-menu-toggle"  onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+          <ul>
+            <li><a href="#">الصفحة الرئيسيه</a></li>
+            <li><a href="#courses">كورسات</a></li>
+            <li><a href="#why">لماذا أرابيا تك</a></li>
+            <li><a href="about.html">من نحن </a></li>
+          </ul>
+          
+          <div class="mobile-buttons">
+            <a href="login.html" class="btn btn-outline" >سجل الدخول إلى المنصة</a>
+            <a href="https://wa.me/+201080749803" class="btn btn-primary">تواصل معنا</a>
+            <div class="language-toggle" style="margin-top: 10px;">
+              <span>EN</span>
+              <i class="fas fa-globe"></i>
+            </div>
+          </div>
+        </div>
+      </header> 
+  <!-- Hero Section -->
+  <section class="hero container">
+    <div class="hero-content">
+      <h1> <span>نعطِي فــــرصة</span>
+        لـــــنصنع جيـــــلًا</h1>
+      
+      <div class="features">
+        <div class="feature-item">
+          <i class="fas fa-check-circle"></i>
+          <p>حصص برمجة <span>مباشرة عبر الإنترنت</span> بحضور الطلاب مع المدرب</p>
+        </div>
+        
+        <div class="feature-item">
+          <i class="fas fa-check-circle"></i>
+          <p>  التعليم التفاعلي  <span> بنظام التخصصات البرمجيه</span> المتصل بسوق العمل</p>
+        </div>
+        
+        <div class="feature-item">
+          <i class="fas fa-check-circle"></i>
+          <p>تدريب علـــى مواقع  العمل الحر و free lancing</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="hero-image">
+      <div class="circle-bg"></div>
+      <img src="./img/4.png" alt="طلاب أرابيا تك">
+    </div>
+  </section>
+  
+
+  <!-- Contact Button -->
+
+  
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/+201080749803">
+  <div class="contact-fab">
+    <div class="pulse"></div>
+    
+    <i class="fab fa-whatsapp fa-lg"></i>
+
+  </div>
+</a>
+<br>
+  <div class="container" id="courses">
+    <br>
+    <br>
+    <br>
+    <div class="header">كورسات اربيا تك</div>
+    
+    <!-- Desktop layout -->
+    <div class="content-wrapper">
+        <div class="buttons-row">
+            <div class="button primary" data-image="login">
+                <span>الذكاء الاصطناعى </span>
+            </div>
+            
+            <div class="button success" data-image="signup">
+                <span class="icon"></span>
+                <span>تطوير المواقع</span>
+            </div>
+            
+            <div class="button warning" data-image="notifications">
+                <span class="icon"></span>
+                <span>الامن السبرانى</span>
+            </div>
+        </div>
+        
+        <div id="imageContainer" class="image-container">
+            <img id="displayedImage" src="./img/spilalizes/empty.png" alt="صورة توضيحية" />
+        </div>
+    </div>
+    
+    <!-- Mobile layout -->
+    <div class="mobile-layout">
+        <div class="mobile-section">
+            <div class="mobile-buttons">
+                <div class="mobile-button primary" data-mobile-image="login">
+                    <span>الذكاء الاصطناعى</span>
+                </div>
+                
+                <div class="mobile-button success" data-mobile-image="signup">
+                    <span>تطوير المواقع</span>
+                </div>
+                
+                <div class="mobile-button warning" data-mobile-image="notifications">
+                    <span>الامن السبرانى</span>
+                </div>
+            </div>
+            
+            <div class="mobile-image">
+                <img id="mobileDisplayedImage" src="img/spilalizes/4.png" alt="صورة توضيحية" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container2" id="why">
+    <header>
+        <h1>لماذا اربيا تك ؟</h1>
+    </header>
+    
+    <div class="hero">
+
+        <div class="features">
+            <div class="feature-card active" onclick="changeImage(1)">
+                <div class="icon-container blue-icon">
+                    <span class="icon">👩‍🏫</span>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-title">مناهج من كليات الهندسه و حاسبات معلومات</div>
+                    <div class="feature-description"> جميع المدرسين خرجيين كليات الهندسه و حاسبات و معلومات</div>
+                </div>
+            </div>
+            
+            <div class="feature-card" onclick="changeImage(2)">
+                <div class="icon-container orange-icon">
+                    <span class="icon">🎓</span>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-title">مناهج معتمدة و شهادة مختومه من نقابه مهندسين</div>
+                    <div class="feature-description">مع نهايه كورس يحصل الطالب على شهادة بختم نقابه مهندسين</div>
+                </div>
+            </div>
+            
+            <div class="feature-card" onclick="changeImage(3)">
+                <div class="icon-container green-icon">
+                    <span class="icon">👨‍💻</span>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-title">كورسات هامه لسوق العمل </div>
+                    <div class="feature-description">كورسات soft skills لا غنى عنها للحصول على منح الدراسيه و فى سوق العمل</div>
+                </div>
+            </div>
+            
+            <div class="feature-card" onclick="changeImage(4)">
+                <div class="icon-container red-icon">
+                    <span class="icon">📋</span>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-title">خطة مهنية طويلة المدى للبرمجة</div>
+                    <div class="feature-description">  مع رؤية متكاملة لتاهيل الطلاب و امتحانات دوريه و مسابقات</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">                
+            <img id="image1" class="visible" src="./img/eng.png" alt="طالب متخرج" />
+            <img id="image2" class="hidden" src="./img/cer.png" alt="مناهج متعددة" />
+            <img id="image3" class="hidden" src="./img/soft.png" alt="خبرة تعليمية" />
+            <img id="image4" class="hidden" src="./img/time.png" alt="مدربين محترفين" />
+            <img id="image5" class="hidden" src="/api/placeholder/400/320" alt="خطة مهنية" />
+        </div>
+    </div>
+    
+    <div class="footer-text">
+        تتبع تقدم ابنك لحظة بلحظة! احصل على متابعة فورية من المدرب خطوة بخطوة
+    </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+      <!-- Column 1: Logo & About -->
+      <div class="footer-column">
+          <div class="footer-logo">
+              <img src="logo.png" alt="Logo">
+              <div class="footer-logo-text"></div>
+          </div>
+          <p class="footer-about">
+            تقدم منصتنا أفضل  تجربة تعليمية متميزة في مجالات البرمجة والتكنولوجيا نسعى دائمًا لتحقيق رضا طلابنا من خلال محتوى تعليمي عالي الجودة، وتدريب عملي مبتكر ودعم مستمر مما يمكنهم من اكتساب المهارات اللازمة لمواكبة تطورات سوق العمل التقني                </p>
+          <div class="footer-social">
+              <a href="https://www.facebook.com/profile.php?id=61571660153694" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.youtube.com/@ArabiaTechAcademy" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+              <a href="mennaayman1232222@gmail.com" class="social-icon gmail"><i class="fas fa-envelope"></i></a>
+              <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+      </div>
+      
+      <!-- Column 2: Quick Links -->
+      <div class="footer-column">
+          <h3 class="footer-title">روابط سريعة</h3>
+          <ul class="footer-links">
+              <li><a href="main.html"><i class="fas fa-chevron-left"></i> الرئيسية</a></li>
+              <li><a href="#courses"><i class="fas fa-chevron-left"></i> كورستنا</a></li>
+              <li><a href="#why"><i class="fas fa-chevron-left"></i> لماذا اربيا تك؟</a></li>
+              <li><a href="about.html"><i class="fas fa-chevron-left"></i> من نحن</a></li>
+              <li><a href="https://wa.me/+201080749803"><i class="fas fa-chevron-left"></i> اتصل بنا</a></li>
+              
+          </ul>
+      </div>
+      
+      <!-- Column 3: Contact Info -->
+      <div class="footer-column">
+          <h3 class="footer-title">معلومات الاتصال</h3>
+          <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span> القاهرة،  جمهوريه مصر العربيه </span>
+          </div>
+          <div class="footer-contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>admin@arabiateches.com</span>
+          </div>
+          <div class="footer-contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <span>+201080749803</span>
+          </div>
+          <div class="footer-contact-item">
+              <i class="fas fa-clock"></i>
+              <span>ساعات العمل: 9 صباحًا -10  مساءً</span>
+          </div>
+      </div>
+      
+      <!-- Column 4: Newsletter -->
+      <div class="footer-column">
+          <h3 class="footer-title">النشرة الإخبارية</h3>
+          <p>انضم إلى نشرتنا الإخبارية للحصول على آخر التحديثات والعروض الخاصة وأحدث أخبار التكنولوجيا</p>
+          <form class="newsletter-form">
+              <input type="email" placeholder="البريد الإلكتروني" class="newsletter-input" required>
+              <button type="submit" class="newsletter-button">
+                  <i class="fas fa-paper-plane"></i>
+              </button>
+          </form>
+      </div>
+  </div>
+  
+  <!-- Copyright Section -->
+  <div class="footer-container">
+      <div class="copyright">
+          جميع الحقوق محفوظة &copy; 2025 <a href="#">اربيا تك   </a> | تصميم وتطوير بواسطة فريق مؤسسه اربيا تك
+      </div>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArabiaTech - تكنولوجيا المستقبل</title>
+    <link rel="icon" type="image/png" href="./img/4.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fff;
+            text-align: right;
+            background-image: url("./img/back.png");
+            background-size: 10%;
+        }
+        header {
+            background-color: #ffffff;
+            color: rgba(0, 0, 0, 0.686);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+        .logo {
+            color: #FFD700; /* Yellow */
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .courses {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 1.2rem 0;
+        }
+        .course {
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            width: 25%;
+            border-right: 4px solid #FFD700;
+        }
+        .cta {
+            background-color: #333;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 8px;
+            color: white;
+        }
+        .btn {
+            background-color: #FFD700;
+            color: #333;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        h2 {
+            color: #333;
+            border-right: 4px solid #FFD700;
+            padding-right: 10px;
+        }
+        @media (max-width: 768px) {
+            .course {
+                width: 100%;
+            }
+        }
+        .footer {
+    background-color: #f8f9fa;
+    padding: 60px 0 30px;
+    margin-top: 50px;
+    border-top: 1px solid #eaeaea;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 30px;
+    padding-right: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.footer-logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+.footer-logo-text span {
+    color: #4e9af1;
+}
+
+.footer-about {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background-color: #faad61;
+    color: #fff;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(78, 154, 241, 0.3);
+    background-color: #3288e6;
+}
+
+.social-icon.facebook:hover {
+    background-color: #3b5998;
+}
+
+.social-icon.youtube:hover {
+    background-color: #ff0000;
+}
+
+.social-icon.gmail:hover {
+    background-color: #D44638;
+}
+
+.social-icon.linkedin:hover {
+    background-color: #0077b5;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #faad61;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 14px;
+}
+
+.footer-links a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-links a:hover {
+    color: #4e9af1;
+    padding-right: 5px;
+}
+
+.footer-links a i {
+    margin-left: 8px;
+    font-size: 12px;
+    color: #faad61;
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    color: #555;
+    font-size: 15px;
+}
+
+.footer-contact-item i {
+    margin-left: 12px;
+    color: #faad61;
+    font-size: 18px;
+    width: 20px;
+}
+
+.footer-newsletter p {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 18px;
+    line-height: 1.7;
+}
+
+.newsletter-form {
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.newsletter-input {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-left: none;
+    border-radius: 5px 0 0 5px;
+    font-family: 'Cairo', sans-serif;
+    outline: none;
+    font-size: 14px;
+}
+
+.newsletter-input::placeholder {
+    color: #999;
+}
+
+.newsletter-input:focus {
+    border-color: #4e9af1;
+}
+
+.newsletter-button {
+    background-color: #faad61;
+    color: #fff;
+    border: none;
+    padding: 0 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-button:hover {
+    background-color: #3288e6;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid #eaeaea;
+    color: #777;
+    font-size: 14px;
+    width: 100%;
+}
+
+.copyright a {
+    color: #4e9af1;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+/* الموقع الحساس */
+@media screen and (max-width: 992px) {
+    .footer-container {
+        justify-content: flex-start;
+    }
+    
+    .footer-column {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    
+    .footer-column {
+        width: 100%;
+        padding-right: 0;
+    }
+    
+    .footer-logo {
+        justify-content: center;
+    }
+    
+    .footer-about {
+        text-align: center;
+    }
+    
+    .footer-social {
+        justify-content: center;
+    }
+    
+    .footer-title {
+        text-align: center;
+    }
+    
+    .footer-title::after {
+        right: 50%;
+        transform: translateX(50%);
+    }
+    
+    .newsletter-form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="">
+        <p>تعليم التكنولوجيا للمراهقين (12-19)</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>من نحن</h2>
+            <p>منصة توفر تعليماً تقنياً عالي الجودة للمراهقين. نركز على المهارات العملية التي تعد الطلاب لمستقبل مهني في مجال التكنولوجيا من خلال التعلم التفاعلي والمشاريع الواقعية.</p>
+        </section>
+
+        <section class="courses">
+            <div class="course">
+                <h3>الذكاء الاصطناعي</h3>
+                <p>تعلم أساسيات الذكاء الاصطناعي وتعلم الآلة من خلال مشاريع عملية.</p>
+            </div>
+            <div class="course">
+                <h3>تطوير الويب</h3>
+                <p>بناء مواقع ويب وتطبيقات متجاوبة باستخدام التقنيات الحديثة.</p>
+            </div>
+            <div class="course">
+                <h3>الأمن السيبراني</h3>
+                <p>فهم مبادئ الأمان وحماية الأنظمة الرقمية من التهديدات.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>لماذا تختارنا</h2>
+            <ul>
+                <li>مدربون خبراء من صناعة التكنولوجيا</li>
+                <li>تعلم تفاعلي قائم على المشاريع</li>
+                <li>تدريب على المهارات الشخصية جنباً إلى جنب مع التعليم التقني</li>
+                <li>مجتمع تعليمي داعم</li>
+            </ul>
+        </section>
+
+        <section class="cta">
+            <h2 style="color: white; border-right-color: #FFD700;">ابدأ رحلتك التقنية اليوم</h2>
+            <p>انضم إلى مجتمعنا من محبي التكنولوجيا الشباب وابنِ المهارات اللازمة لعالم الغد الرقمي.</p>
+
+            <a href="https://wa.me/+201080749803" class="btn">اتصل بنا</a>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Column 1: Logo & About -->
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Logo">
+                    <div class="footer-logo-text"></div>
+                </div>
+                <p class="footer-about">
+                  تقدم منصتنا أفضل  تجربة تعليمية متميزة في مجالات البرمجة والتكنولوجيا نسعى دائمًا لتحقيق رضا طلابنا من خلال محتوى تعليمي عالي الجودة، وتدريب عملي مبتكر ودعم مستمر مما يمكنهم من اكتساب المهارات اللازمة لمواكبة تطورات سوق العمل التقني                </p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/profile.php?id=61571660153694" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/@ArabiaTechAcademy" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+                    <a href="mennaayman1232222@gmail.com" class="social-icon gmail"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <!-- Column 2: Quick Links -->
+            <div class="footer-column">
+                <h3 class="footer-title">روابط سريعة</h3>
+                <ul class="footer-links">
+                    <li><a href="main.html"><i class="fas fa-chevron-left"></i> الرئيسية</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-left"></i> من نحن</a></li>
+                    <li><a href="https://wa.me/+201080749803"><i class="fas fa-chevron-left"></i> اتصل بنا</a></li>
+                    
+                </ul>
+            </div>
+            
+            <!-- Column 3: Contact Info -->
+            <div class="footer-column">
+                <h3 class="footer-title">معلومات الاتصال</h3>
+                <div class="footer-contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span> القاهرة،  جمهوريه مصر العربيه </span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>admin@arabiateches.com</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+201080749803</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-clock"></i>
+                    <span>ساعات العمل: 9 صباحًا -10  مساءً</span>
+                </div>
+            </div>
+            
+            <!-- Column 4: Newsletter -->
+            <div class="footer-column">
+                <h3 class="footer-title">النشرة الإخبارية</h3>
+                <p>انضم إلى نشرتنا الإخبارية للحصول على آخر التحديثات والعروض الخاصة وأحدث أخبار التكنولوجيا</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="البريد الإلكتروني" class="newsletter-input" required>
+                    <button type="submit" class="newsletter-button">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Copyright Section -->
+        <div class="footer-container">
+            <div class="copyright">
+                جميع الحقوق محفوظة &copy; 2025 <a href="#">اربيا تك   </a> | تصميم وتطوير بواسطة فريق مؤسسه اربيا تك
+            </div>
+        </div>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+      
+    
+</body>
+</html>
